@@ -17,14 +17,14 @@ public class ListView extends VerticalLayout {
     public ListView() {
         setSpacing(false);
 
-        Image img = new Image("images/empty-plant.png", "placeholder plant");
+        Image img = new Image("images/Rudi.jpg", "Rudi");
         img.setWidth("200px");
         add(img);
 
-        H2 header = new H2("This place intentionally left empty");
+        H2 header = new H2("");
         header.addClassNames(Margin.Top.XLARGE, Margin.Bottom.MEDIUM);
         add(header);
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
+        add(new Paragraph("Beanie Bellies Farm \uD83E\uDD8C\uD83D\uDEF7\uD83C\uDF84\uD83E\uDD20"));
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
