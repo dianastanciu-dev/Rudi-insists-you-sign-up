@@ -35,7 +35,11 @@ public class ListView extends VerticalLayout {
             getUI().ifPresent(ui -> ui.navigate("View2"));
         });
 
-        HorizontalLayout layout = new HorizontalLayout(header, button);
+        Button button2 = new Button("Sign up? Sign up?", click -> {
+            getUI().ifPresent(ui -> ui.navigate("View3"));
+        });
+
+        HorizontalLayout layout = new HorizontalLayout(header, button, button2);
         layout.setDefaultVerticalComponentAlignment(Alignment.BASELINE);
         add(layout);
 
